@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZIL Group | Laboratory Renovation & Upgrade</title>
+    <meta name="description" content="Expert laboratory renovation and infrastructure upgrades. We assess, redesign, and upgrade existing laboratories without unnecessary disruption.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN for Cloudflare Pages deployment) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAFAFA',
+                            magenta: '#96145E',
+                            magentaHover: '#7A104C',
+                            blue: '#3B82F6',
+                            text: '#2D2D2D',
+                            heading: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background-color: #FAFAFA; 
+            color: #2D2D2D; 
+            font-family: 'Inter', sans-serif;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary {
+            list-style: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans bg-[#FAFAFA] text-[#2D2D2D]">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center">
+                    <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M138WTKZYMF7P76TJ21RNEB4.png" 
+                         class="h-10 sm:h-12 w-auto object-contain"
+                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'40\' fill=\'none\'></svg>';">
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#assessment-form" class="inline-flex items-center justify-center px-5 py-2.5 rounded-md bg-brand-magenta text-white text-sm font-bold shadow hover:bg-brand-magentaHover transition duration-200">
+                    Request a Laboratory Assessment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center justify-center bg-gray-900 overflow-hidden">
+        <!-- Background image opacity increased from 30% to 55% for clearer visibility -->
+        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M13K4ZCCWKX6WHRVP0PCE360.jpeg" 
+             alt="AZIL Laboratory Engineering" 
+             class="absolute inset-0 w-full h-full object-cover opacity-55 select-none pointer-events-none"
+             onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/1f2937/9ca3af?text=Hero+Lab+Image+Placeholder';">
+        
+        <!-- Lightened neutral grey gradient overlay replacing heavy dark/blue tint -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-900/45 to-gray-900/25"></div>
+
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-16 sm:py-24">
+            <!-- Neutral grey badge replacing the blue tone -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 rounded-full bg-gray-800/70 border border-gray-600/50 backdrop-blur text-gray-200 text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-gray-300 animate-pulse"></span>
+                Singapore | Malaysia
+            </div>
+
+            <!-- Headline with contrast format -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-tight sm:leading-tight mb-4 drop-shadow-sm">
+                Your Laboratory Has Evolved.<br class="hidden sm:inline"> <span class="font-extrabold text-white">Has Your Space Kept Up?</span>
+            </h1>
+            <div class="w-14 h-1 bg-brand-magenta rounded-full mx-auto mb-6"></div>
+
+            <p class="text-base sm:text-lg lg:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+                We don't start by asking <span class="italic text-white font-medium">"What do you want to renovate?"</span><br class="hidden sm:inline">
+                We start by asking <strong class="text-white font-bold">"What's no longer working in your laboratory?"</strong>
+            </p>
+
+            <div class="flex items-center justify-center">
+                <a href="#assessment-form" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-brand-magenta text-white font-extrabold text-base rounded-lg shadow-xl hover:bg-brand-magentaHover transition duration-200">
+                    Request a Laboratory Assessment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sector Strip -->
+    <section class="bg-gray-100 border-b border-gray-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest text-center mb-4">
+                Engineering existing laboratories across critical sectors:
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-semibold text-gray-700">
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">R&amp;D &amp; Innovation</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">QC &amp; QA Testing</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">Pharma &amp; Life Sciences</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">Chemical &amp; Petrochem</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">Food &amp; Beverage</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">Electronics &amp; Semiconductor</span>
+                <span class="bg-white px-3 py-1.5 rounded border border-gray-200">Healthcare &amp; Clinical</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Problem Statement -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
+                Signs Your <span class="font-extrabold text-brand-heading">Laboratory Needs an Upgrade</span>
+            </h2>
+            <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-4"></div>
+            <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+                If any of these sound familiar, your current infrastructure may be struggling to keep pace with operational realities.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Space &amp; Layout Constraints</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Laboratory is too crowded; new equipment doesn't fit the existing footprint or clearance thresholds.</p>
+            </div>
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Power &amp; Electrical Limits</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Existing electrical capacity or sub-panels are insufficient for high-draw instrumentation.</p>
+            </div>
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Heat-Load &amp; ACMV Mismatches</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Laboratory has become noticeably warmer as equipment increased, causing temperature instability.</p>
+            </div>
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Insufficient Ventilation / Exhaust</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Local exhaust ventilation (LEV), fume extraction, or fresh air exchanges fail to match current processes.</p>
+            </div>
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Utility Shortages</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Shortage of specialty gas drops, compressed air, vacuum, DI water supply, or chemical-resistant drainage.</p>
+            </div>
+            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
+                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Changed Workflow &amp; Ageing Furniture</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Workflows have evolved since initial build-out; workbenches are no longer fit for purpose or compliant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Methodology -->
+    <section class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-blue font-bold tracking-wider uppercase text-xs sm:text-sm">Diagnostic Methodology</span>
+                <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mt-2 mb-2">
+                    Don't Renovate First. <span class="font-extrabold text-brand-heading">Understand First.</span>
+                </h2>
+                <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-4"></div>
+                <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                    Not every lab needs an expensive, disruptive full rebuild. AZIL systematically audits your laboratory ecosystem across six interconnected operational dimensions before proposing any physical construction:
+                </p>
+
+                <!-- 6-Pillar Interactive Audit Chain -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3.5 text-left mb-16">
+                    <!-- Pillar 01: People -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">01</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">People</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Staff density, technician ergonomics, clearance paths, and shift handovers.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 02: Process -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">02</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">Process</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Sample routing, contamination barriers, batch flow, and protocol compliance.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 03: Equipment -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">03</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">Equipment</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Thermal BTUs, vibration damping, spatial clearance, and umbilical needs.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 04: Infrastructure -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">04</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">Infrastructure</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Electrical distribution, gas manifold lines, ACMV balancing, and drainage.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 05: Safety -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">05</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">Safety</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">LEV exhaust velocities, biosafety zones, emergency showers, and code checks.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 06: Future Growth -->
+                    <div class="group bg-gray-50/80 hover:bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-magenta hover:shadow-md transition-all duration-200 flex flex-col justify-between cursor-pointer">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="w-6 h-6 rounded-full bg-pink-50 text-brand-magenta text-xs font-mono font-bold flex items-center justify-center group-hover:bg-brand-magenta group-hover:text-white transition-colors">06</span>
+                                <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 group-hover:border-pink-200 flex items-center justify-center text-gray-700 group-hover:text-brand-magenta transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1 group-hover:text-brand-magenta transition-colors">Future Growth</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Modular benching spines, expandable utility drops, and spare M&amp;E capacity.</p>
+                        </div>
+                        <div class="mt-4 pt-2.5 border-t border-gray-200/70 text-[11px] font-semibold text-gray-500 group-hover:text-brand-magenta transition-colors flex items-center gap-1">
+                            <span>Audit Lens &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Framework Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="border-2 border-emerald-200 bg-emerald-50/50 p-8 rounded-xl">
+                    <div class="text-emerald-700 font-extrabold text-xs uppercase tracking-widest mb-2">Category 01</div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">RETAIN</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Identify what still works. Solid worktops, sound utility runs, and compliant partitions are preserved, saving you capital and minimizing downtime.
+                    </p>
+                </div>
+                <div class="border-2 border-brand-blue/30 bg-blue-50/50 p-8 rounded-xl">
+                    <div class="text-brand-blue font-extrabold text-xs uppercase tracking-widest mb-2">Category 02</div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">MODIFY</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Re-engineer targeted elements: re-balance ACMV airflows, branch electrical sub-circuits, reposition furniture, and optimize bench workflows.
+                    </p>
+                </div>
+                <div class="border-2 border-brand-magenta/30 bg-pink-50/40 p-8 rounded-xl">
+                    <div class="text-brand-magenta font-extrabold text-xs uppercase tracking-widest mb-2">Category 03</div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">REPLACE</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Replace obsolete infrastructure that poses safety risks or restricts critical operations: worn fume extraction, non-compliant M&amp;E, or failing surfaces.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 7 Scope Categories -->
+            <div class="border-t border-gray-100 pt-16">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-brand-heading tracking-tight mb-2">
+                        Comprehensive Scope Under <span class="font-extrabold text-brand-heading">One Integrated Team</span>
+                    </h3>
+                    <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-2 mb-3"></div>
+                    <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+                        No multi-vendor coordination burden on your team. AZIL delivers end-to-end engineering from diagnosis to commissioning.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            1. Laboratory Space Planning &amp; Workflow
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Reconfiguration &amp; workflow planning</li>
+                            <li>Equipment positioning &amp; clearance</li>
+                            <li>Zoning, expansion &amp; bench optimisation</li>
+                            <li>Storage &amp; sample flow planning</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            2. ACMV, Ventilation &amp; Exhaust
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Cooling &amp; heat-load assessment</li>
+                            <li>Fresh-air exchanges &amp; pressure regimes</li>
+                            <li>Local exhaust ventilation (LEV)</li>
+                            <li>Fume extraction &amp; scrubber integration</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            3. M&amp;E &amp; Laboratory Infrastructure
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Electrical power capacity &amp; distribution</li>
+                            <li>Plumbing, drainage &amp; emergency showers</li>
+                            <li>Lab specialty gases &amp; compressed air</li>
+                            <li>ELV, monitoring &amp; emergency power</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            4. Furniture &amp; Workstations
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Chemical-resistant worktops &amp; sinks</li>
+                            <li>Heavy instrument vibration-damped benches</li>
+                            <li>Reconfigurable benching systems</li>
+                            <li>Fume cupboards &amp; biosafety cabinets</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            5. Equipment Integration
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Pre-arrival utility demand audit</li>
+                            <li>Power/cooling/exhaust point coordination</li>
+                            <li>Service umbilical &amp; floor box positioning</li>
+                            <li>Clearance &amp; operational safety buffer</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base">
+                            6. Architectural &amp; Interior Works
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5 list-disc list-inside">
+                            <li>Hygienic lab partition systems</li>
+                            <li>Epoxy / chemical-resistant seamless flooring</li>
+                            <li>Cleanroom &amp; lab ceiling grids</li>
+                            <li>Interlocking doors &amp; viewing glazing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-6 bg-gray-50 rounded-xl border border-gray-200 max-w-2xl mx-auto text-center">
+                    <h4 class="font-bold text-gray-900 border-b-2 border-brand-magenta pb-2 mb-3 text-base inline-block">
+                        7. Project Management &amp; Construction
+                    </h4>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        Site assessment &bull; Engineering coordination &bull; Phased renovation during live lab operations &bull; Testing, commissioning &amp; handover.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Comparison Section -->
+    <section class="py-20 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
+                Not Just Another <span class="font-extrabold text-brand-heading">Renovation Contractor</span>
+            </h2>
+            <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-6"></div>
+            <p class="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
+                Treating a laboratory like a generic commercial office fit-out is dangerous. It leads to 
+                <strong>over-renovating</strong> (demolishing viable infrastructure unnecessarily) or 
+                <strong>under-scoping</strong> (missing critical M&amp;E and ACMV limits that emerge only after multi-million-dollar instruments arrive).
+            </p>
+            <p class="text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
+                AZIL Group operates as an engineering-led design and build partner. We manage lab space planning, M&amp;E engineering, ACMV, utilities, and construction under a single roof. Our phased methodology ensures your team continues mission-critical testing even while upgrades proceed.
+            </p>
+            <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-3.5 bg-brand-magenta text-white font-bold rounded-lg shadow hover:bg-brand-magentaHover transition duration-200">
+                Request a Laboratory Assessment
+            </a>
+        </div>
+    </section>
+
+    <!-- 5. Case Studies -->
+    <section class="py-20 bg-[#96145E] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="bg-white/15 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white">
+                    Field Engineering
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-medium tracking-tight mt-3 mb-2 text-white">
+                    Engineering <span class="font-extrabold text-white">Proven Results</span>
+                </h2>
+                <div class="w-12 h-1 bg-white/40 rounded-full mx-auto mt-3 mb-4"></div>
+                <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+                    Real infrastructure solutions for active, operating laboratory facilities.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Case Study 01 -->
+                <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gray-100 flex flex-col items-center justify-center overflow-hidden border-b border-gray-100 text-center relative">
+                        <img src="insert image link here" 
+                             alt="Case Study 01 Project Photography" 
+                             class="w-full h-full object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Project+01+Photo+Placeholder';">
+                        <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/60 text-white font-mono backdrop-blur">Project 01</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-4 border-b border-gray-100 pb-2 text-gray-900">
+                                [PLACEHOLDER — Project 01]
+                            </h3>
+                            <div class="space-y-3 text-xs sm:text-sm">
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Challenge:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What wasn't working: e.g. severe ACMV heat-load mismatch after installing high-throughput analyzers]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">What AZIL Identified:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — Root cause: e.g. return air short-circuiting and undersized circuit breaker allocation]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Solution:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What AZIL changed: targeted supply ducting reconfiguration and new sub-panel without shutdown]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <span class="font-bold text-emerald-600 uppercase tracking-wider text-[11px] block">The Result:</span>
+                            <p class="text-gray-700 text-xs sm:text-sm mt-0.5 font-medium">[PLACEHOLDER — How the lab improved: temperature stabilized to &plusmn;0.5&deg;C with zero operational downtime]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 02 -->
+                <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gray-100 flex flex-col items-center justify-center overflow-hidden border-b border-gray-100 text-center relative">
+                        <img src="insert image link here" 
+                             alt="Case Study 02 Project Photography" 
+                             class="w-full h-full object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Project+02+Photo+Placeholder';">
+                        <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/60 text-white font-mono backdrop-blur">Project 02</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-4 border-b border-gray-100 pb-2 text-gray-900">
+                                [PLACEHOLDER — Project 02]
+                            </h3>
+                            <div class="space-y-3 text-xs sm:text-sm">
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Challenge:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What wasn't working: e.g. QC lab floor overcrowded, unable to accommodate two new mass spectrometers]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">What AZIL Identified:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — Root cause: redundant fixed cabinetry blocking flow and outdated utility distribution trees]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Solution:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What AZIL changed: converted fixed workbenches to reconfigurable spine systems with overhead drops]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <span class="font-bold text-emerald-600 uppercase tracking-wider text-[11px] block">The Result:</span>
+                            <p class="text-gray-700 text-xs sm:text-sm mt-0.5 font-medium">[PLACEHOLDER — How the lab improved: gained 35% usable space; equipment integrated 2 weeks ahead of target]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 03 -->
+                <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gray-100 flex flex-col items-center justify-center overflow-hidden border-b border-gray-100 text-center relative">
+                        <img src="insert image link here" 
+                             alt="Case Study 03 Project Photography" 
+                             class="w-full h-full object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Project+03+Photo+Placeholder';">
+                        <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/60 text-white font-mono backdrop-blur">Project 03</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-4 border-b border-gray-100 pb-2 text-gray-900">
+                                [PLACEHOLDER — Project 03]
+                            </h3>
+                            <div class="space-y-3 text-xs sm:text-sm">
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Challenge:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What wasn't working: chemical testing lab faced LEV certification failure on ageing fume extractors]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">What AZIL Identified:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — Root cause: static pressure loss across degraded exhaust duct runs and manifold balance issues]</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Solution:</span>
+                                    <p class="text-gray-600 mt-0.5">[PLACEHOLDER — What AZIL changed: staged weekend replacement of PP ducting and re-commissioned VAV control units]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <span class="font-bold text-emerald-600 uppercase tracking-wider text-[11px] block">The Result:</span>
+                            <p class="text-gray-700 text-xs sm:text-sm mt-0.5 font-medium">[PLACEHOLDER — How the lab improved: passed all statutory regulatory certifications on first inspection cycle]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-magenta font-extrabold rounded-lg shadow-lg hover:bg-gray-100 transition duration-200">
+                    Request a Laboratory Assessment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Assessment Request & Form -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200" id="assessment-form">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <span class="text-brand-magenta font-bold tracking-wider uppercase text-xs sm:text-sm">Direct Assessment Request</span>
+                        <h2 class="text-3xl sm:text-4xl font-medium text-brand-heading tracking-tight mt-1 mb-2">
+                            Request a <span class="font-extrabold text-brand-heading">Laboratory Assessment</span>
+                        </h2>
+                        <div class="w-12 h-1 bg-gray-300 rounded-full mt-3 mb-4"></div>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                            Take the uncertainty out of your laboratory expansion or renovation. Our engineering team reviews your current space, equipment integration plans, and M&amp;E infrastructure before any capital commitment is made.
+                        </p>
+                    </div>
+
+                    <!-- Lead Magnet Link -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 text-base mb-1">
+                                    Not quite ready for an on-site assessment?
+                                </h3>
+                                <p class="text-xs sm:text-sm text-gray-600 mb-3 leading-relaxed">
+                                    Download our complimentary diagnostic document: <em>"AZIL Existing Laboratory Upgrade Checklist: 15 Things to Review Before Renovating or Expanding."</em>
+                                </p>
+                                <a href="https://3g9tm.share-na2.hsforms.com/25O8TQY64RQukz6mgs8qJ3A" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-blue hover:text-blue-700 transition">
+                                    <span>Download the Free Checklist</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-3">
+                            Who this service is not for:
+                        </h4>
+                        <ul class="text-xs sm:text-sm text-gray-600 space-y-2 list-disc list-inside">
+                            <li>Organisations seeking a brand-new laboratory built from scratch on an empty site (we focus on existing operational facilities).</li>
+                            <li>Requests for instant, un-assessed quotes without technical review (AZIL follows Understand &rarr; Site Review &rarr; Solution &rarr; Scope).</li>
+                            <li>Minor, single-item maintenance unrelated to infrastructure (e.g. replacing a single broken sink tap).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Assessment HubSpot Form -->
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-xl border-t-4 border-brand-magenta">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-extrabold text-gray-900">Laboratory Assessment Enquiry</h3>
+                        <p class="text-xs text-gray-500 mt-1">Directly received by AZIL Project &amp; Engineering team</p>
+                    </div>
+
+                    <div id="hubspot-form-container" class="min-h-[420px]"></div>
+
+                    <script charset="utf-8" type="text/javascript" src="https://js-na2.hsforms.net/forms/embed/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na2",
+                        portalId: "5798074",
+                        formId: "ffbe2b0f-3d14-4b04-affa-dc583728265d",
+                        target: "#hubspot-form-container",
+                        onFormReady: function($form) {
+                            window.hubspotFormReady = true;
+                            window.hubspotForm = $form;
+
+                            try {
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const salesRep = urlParams.get('sales_rep_attribution');
+                                if (salesRep) {
+                                    const hiddenRepInput = $form.find('input[name="sales_rep_attribution"]');
+                                    if (hiddenRepInput.length > 0) {
+                                        hiddenRepInput.val(salesRep).change();
+                                    }
+                                }
+                            } catch(err) {
+                                console.error("Error setting sales attribution parameter:", err);
+                            }
+                        }
+                      });
+                    </script>
+
+                    <p class="text-xs text-center text-gray-400 mt-4 leading-relaxed">
+                        Have architectural drawings, equipment schedules or site photos? You can securely share technical documents after submitting your request.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Frequently Asked Questions -->
+    <section class="py-20 bg-[#FAFAFA] border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-heading tracking-tight">
+                    Frequently <span class="font-black text-brand-heading">asked questions</span>
+                </h2>
+                <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-8"></div>
+            </div>
+            
+            <div class="space-y-3">
+                <!-- FAQ 1 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: Can we renovate our laboratory without completely rebuilding it?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        Yes. Using our Retain / Modify / Replace framework, we systematically categorize what infrastructure remains technically sound and code-compliant. Many labs achieve their expansion and equipment integration goals with targeted M&amp;E or ACMV re-balancing, avoiding full strip-out demolition costs.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: Can our laboratory continue operating during renovation?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        Yes. We specialize in live, operational facilities. We develop phased renovation schedules, negative-pressure dust containment partitions, off-hours/weekend tie-ins, and temporary utility bypasses so mission-critical testing schedules proceed uninterrupted.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: We're purchasing new laboratory equipment — when should we involve AZIL?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        Ideally before placing the purchase order or signing delivery contracts. We conduct a pre-arrival utility assessment to cross-check the manufacturer's cut-sheet against your site's electrical capacity, exhaust static pressure, cooling BTUs, gas purity, and floor vibration thresholds.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: Why has our laboratory become hotter after adding equipment?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        Modern analytical instruments (LC-MS, mass spectrometers, incubators, robotic handlers) generate massive sensible heat loads. If your ACMV system was sized for simple bench testing, the air volume exchange is overwhelmed. We calculate thermal outputs and re-engineer airflow paths and localized exhaust to restore thermal balance.
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: Can AZIL upgrade only our M&amp;E or ventilation without renovating the entire laboratory?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        Yes. We frequently execute targeted infrastructure packages—such as upgrading electrical sub-panels, adding dedicated clean power circuits, installing localized LEV fume arms, or replumbing drainage manifolds—without touching architectural furniture.
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: What types of facilities does AZIL support for renovation?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        We support active, operating research, testing, QC, and industrial laboratories. We maintain engineering teams and project managers delivering fit-out, renovation, M&amp;E, and commissioning for mission-critical facilities.
+                    </div>
+                </details>
+
+                <!-- FAQ 7 -->
+                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
+                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
+                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
+                            Q: How do we know what actually needs upgrading?
+                        </h3>
+                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </summary>
+                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
+                        That is precisely the purpose of our initial Laboratory Assessment. We inspect your physical site, review your equipment lists and workflows, run capacity checks on M&amp;E and ACMV, and provide a clear Retain / Modify / Replace roadmap before you commit to construction budgets.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative w-full text-white py-20 border-t border-gray-700 overflow-hidden bg-gray-900">
+        <!-- Background Image with image placeholder -->
+        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0YF2P8MSQTQ5636PQHKZ7S9.png" 
+             alt="" 
+             class="absolute inset-0 w-full h-full object-cover opacity-50 select-none pointer-events-none"
+             onerror="this.onerror=null; this.src='https://placehold.co/1920x800/1f2937/4b5563?text=Footer+Background+Image+Placeholder';">
+        
+        <!-- Lightened neutral grey overlay with reduced opacity -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-900/55 to-gray-900/40"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M138WTKZYMF7P76TJ21RNEB4.png" 
+                     class="h-10 sm:h-12 w-auto object-contain mx-auto"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'40\' fill=\'none\'></svg>';">
+            </div>
+            <h3 class="text-xl sm:text-2xl font-medium mb-2 drop-shadow-sm">
+                Ready to solve your <span class="font-extrabold text-white">laboratory infrastructure constraints?</span>
+            </h3>
+            <div class="w-12 h-1 bg-white/40 rounded-full mx-auto mt-2 mb-6"></div>
+            <p class="text-gray-200 text-sm max-w-xl mx-auto mb-8 drop-shadow-sm">
+                Speak directly with an engineering team that understands laboratories, compliance, and live operational continuity.
+            </p>
+            <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-4 bg-brand-magenta text-white font-extrabold rounded-lg shadow-xl hover:bg-brand-magentaHover transition duration-200 mb-10">
+                Request a Laboratory Assessment
+            </a>
+            <div class="pt-8 border-t border-gray-700/70 text-xs text-gray-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 AZIL Group. All rights reserved.</p>
+                <div class="space-x-4">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
