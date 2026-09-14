@@ -588,9 +588,9 @@
     <!-- 7. Assessment Request & Form -->
     <section class="py-20 bg-gray-50 border-t border-gray-200" id="assessment-form">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
                 
-                <div class="lg:col-span-6 space-y-6">
+                <div class="lg:col-span-6 flex flex-col space-y-6">
                     <div>
                         <span class="text-brand-magenta font-bold tracking-wider uppercase text-xs sm:text-sm">Direct Assessment Request</span>
                         <h2 class="text-3xl sm:text-4xl font-medium text-brand-heading tracking-tight mt-1 mb-2">
@@ -681,12 +681,12 @@
                         </div>
                     </div>
 
-                    <!-- 4:5 Image Placeholder Card -->
-                    <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-white aspect-[4/5] relative group">
+                    <!-- Dynamic Image Card: Automatically stretches to align with the form's bottom border -->
+                    <div class="flex-grow flex-1 min-h-[320px] rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-white relative group">
                         <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F0JTWZYF8455VQ4XMWTTC8.png" 
                              alt="Laboratory On-Site Assessment & Engineering Team" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/800x1000/F3F4F6/9CA3AF?text=4%3A5+Image+Placeholder';">
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x1200/F3F4F6/9CA3AF?text=Engineering+Site+Assessment';">
                     </div>
                 </div>
 
