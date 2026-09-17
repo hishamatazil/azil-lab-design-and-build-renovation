@@ -1,892 +1,571 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5LCS736D');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZIL Group | Laboratory Renovation & Upgrade</title>
-    <meta name="description" content="Expert laboratory renovation and infrastructure upgrades. We assess, redesign, and upgrade existing laboratories without unnecessary disruption.">
-    
-    <!-- Google Fonts: Inter -->
+    <title>Fume Hood Servicing & Certification</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS (via CDN for Cloudflare Pages deployment) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            bg: '#FAFAFA',
-                            magenta: '#96145E',
-                            magentaHover: '#7A104C',
-                            blue: '#3B82F6',
-                            text: '#2D2D2D',
-                            heading: '#0F172A'
-                        }
+                        primary: '#96145E', // Deep magenta
+                        primaryDark: '#6B0F45', // Darker shade for contrast
+                        accent: '#3B82F6', // Electric blue
+                        surface: '#FAFAFA', // Near white
+                        body: '#2D2D2D', // Neutral dark gray
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
     <style>
-        body { 
-            background-color: #FAFAFA; 
-            color: #2D2D2D; 
-            font-family: 'Inter', sans-serif;
+        /* Custom styles for specific requirements */
+        .section-heading {
+            @apply font-heading font-extrabold text-gray-900 text-3xl md:text-4xl mb-6 tracking-tight;
         }
-        details summary::-webkit-details-marker {
-            display: none;
+        .body-text {
+            @apply text-body leading-relaxed text-lg;
         }
-        details summary {
-            list-style: none;
-            outline: none;
+        .btn-primary {
+            @apply inline-block bg-primary hover:bg-primaryDark text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors duration-200 text-center;
+        }
+        .image-placeholder {
+            @apply bg-gray-200 border-2 border-dashed border-gray-400 flex items-center justify-center text-gray-500 font-medium text-center p-6 rounded-xl;
         }
     </style>
 </head>
-<body class="antialiased font-sans bg-[#FAFAFA] text-[#2D2D2D]">
+<body class="bg-surface font-sans text-body antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LCS736D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center">
-                <a href="#" class="flex items-center">
-                    <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M138WTKZYMF7P76TJ21RNEB4.png" 
-                         class="h-10 sm:h-12 w-auto object-contain"
-                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'40\' fill=\'none\'></svg>';">
-                </a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="#assessment-form" class="inline-flex items-center justify-center px-5 py-2.5 rounded-md bg-brand-magenta text-white text-sm font-bold shadow hover:bg-brand-magentaHover transition duration-200">
-                    Request a Laboratory Assessment
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 1. Hero Section -->
-    <header class="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center justify-center bg-gray-900 overflow-hidden">
-        <!-- Background image opacity set to 55% for clearer visibility -->
-        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M13K4ZCCWKX6WHRVP0PCE360.jpeg" 
-             alt="AZIL Laboratory Engineering" 
-             class="absolute inset-0 w-full h-full object-cover opacity-55 select-none pointer-events-none"
-             onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/1f2937/9ca3af?text=Hero+Lab+Image+Placeholder';">
-        
-        <!-- Lightened neutral grey gradient overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-900/45 to-gray-900/25"></div>
-
-        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-16 sm:py-24">
-            <!-- Neutral grey badge -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 rounded-full bg-gray-800/70 border border-gray-600/50 backdrop-blur text-gray-200 text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-gray-300 animate-pulse"></span>
-                Singapore | Malaysia
-            </div>
-
-            <!-- Headline with contrast format -->
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-tight sm:leading-tight mb-4 drop-shadow-sm">
-                Your Laboratory Has Evolved.<br class="hidden sm:inline"> <span class="font-extrabold text-white">Has Your Space Kept Up?</span>
-            </h1>
-            <div class="w-14 h-1 bg-brand-magenta rounded-full mx-auto mb-6"></div>
-
-            <p class="text-base sm:text-lg lg:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
-                We don't start by asking <span class="italic text-white font-medium">"What do you want to renovate?"</span><br class="hidden sm:inline">
-                We start by asking <strong class="text-white font-bold">"What's no longer working in your laboratory?"</strong>
-            </p>
-
-            <div class="flex items-center justify-center">
-                <a href="#assessment-form" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-brand-magenta text-white font-extrabold text-base rounded-lg shadow-xl hover:bg-brand-magentaHover transition duration-200">
-                    Request a Laboratory Assessment
-                </a>
-            </div>
+            <a href="#" class="block">
+                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M138WTKZYMF7P76TJ21RNEB4.png" alt="Company Logo" class="h-10 md:h-12 w-auto object-contain mix-blend-multiply">
+            </a>
+            <a href="#quote" class="btn-primary py-2 px-4 md:px-6 text-sm md:text-base">
+                Request a Quote
+            </a>
         </div>
     </header>
 
-    <!-- 2. Problem Statement -->
+    <!-- 01 — Hero Section -->
+    <section class="relative pt-40 pb-32 flex items-center min-h-[600px] lg:min-h-[750px]">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 overflow-hidden bg-black">
+            <!-- Replace background-image url below with your actual image -->
+            <div class="w-full h-full bg-cover bg-center transform scale-105 opacity-50" style="background-image: url('https://platform-bcl.bsb-cdn.com/media/2026/08/01M0Y1BFZ7NSZESP995JDAQND4.png');"></div>
+        </div>
+
+        <!-- Content (Relative to sit on top of background) -->
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl space-y-6">
+                <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-sm">
+                    Professional Fume Hood Servicing & Certification <br>
+                    <span class="text-gray-300 block mt-2 text-2xl md:text-3xl">Compliance You Can Trust</span>
+                </h1>
+                <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl drop-shadow-sm">
+                    Certified airflow testing and state certification — keep your lab compliant and your team safe.
+                </p>
+                <div class="pt-8">
+                    <a href="#quote" class="inline-flex items-center justify-between bg-primary hover:bg-primaryDark text-white font-heading font-bold rounded-full shadow-2xl transition-all duration-300 hover:-translate-y-1 transform p-2 w-full sm:w-auto max-w-[320px] border border-white/10">
+                        <span class="pl-6 pr-4 text-lg w-full text-center sm:text-left tracking-wide">Get Quote Now</span>
+                        <span class="w-12 h-12 flex-shrink-0 bg-white text-primary rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <p class="text-sm text-gray-300 mt-5 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Trusted by laboratories, research facilities, hospitals, and manufacturing plants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-7xl mx-auto px-4 mt-8"><hr class="border-gray-200"></div>
+
+    <!-- 02 — Problem Statement -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <h2 class="section-heading text-center mx-auto max-w-3xl">An unserviced fume hood is a compliance risk — and a safety risk.</h2>
+        
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <!-- Point 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-500 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Silent Safety Risks</h3>
+                <p class="body-text text-base text-gray-600">Inward airflow can quietly degrade without warning, exposing your staff to hazardous fumes and airborne contaminants.</p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Fines & Shutdowns</h3>
+                <p class="body-text text-base text-gray-600">Skipping mandatory annual certifications risks costly fines, sudden operational shutdowns, and failing safety audits.</p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-accent mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Administrative Burden</h3>
+                <p class="body-text text-base text-gray-600">Finding time for servicing, tracking expiration dates, and keeping documents organised is a constant, stressful burden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 — Solution -->
+    <section class="bg-[#f5e8f0] py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 w-full h-[350px]">
+                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0Y2R44NEBKE15943MD96BTT.jpg" alt="Technician inspecting fume hood components" class="w-full h-full object-cover rounded-xl shadow-md border-2 border-dashed border-gray-300 bg-gray-100 text-gray-400 text-sm flex items-center justify-center">
+            </div>
+            <div class="flex-1">
+                <h2 class="section-heading text-gray-900 font-extrabold tracking-tight">Certified servicing that keeps you compliant and protected.</h2>
+                <div class="space-y-4 body-text mt-6">
+                    <p>
+                        We provide certified fume hood servicing and re-certification:
+                    </p>
+                    <ul class="space-y-3 mt-4">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 font-medium text-gray-800">Airflow testing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 font-medium text-gray-800">Full inspection</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 font-medium text-gray-800">State certification</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4">
+                        Whether you need a one-time servicing or an ongoing annual contract, our qualified technicians handle the testing and the state certification — so your equipment stays compliant and your team stays protected.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 — Details Servis / USP -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
-                Signs Your <span class="font-extrabold text-brand-heading">Laboratory Needs an Upgrade</span>
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-2xl md:text-3xl text-gray-900 tracking-tight mb-4">
+                <span class="font-normal text-gray-700">What's included in</span> <span class="font-extrabold">every service</span>
             </h2>
-            <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-4"></div>
-            <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-                If any of these sound familiar, you're not alone—most labs simply outgrow the space, power, and airflow they were originally built for.
-            </p>
+            <div class="w-12 h-1 bg-gray-300 mx-auto rounded-full"></div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Space &amp; Layout Constraints</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Laboratory is too crowded; new equipment doesn't fit the existing footprint or clearance thresholds.</p>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- List Items -->
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Face velocity testing</strong> — confirms your fume hood is drawing air at a safe rate</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Inward airflow confirmation</strong></span>
+                </li>
+            </ul>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Alarm system testing</strong> — make sure warning systems actually work</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Qualified, certified technicians</strong> — experienced across multiple industries</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="w-full h-[350px] mt-8">
+            <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M13PDAN3WGWX09P3TN8YBKR0.png" alt="Close-up of state certification label" class="w-full h-full object-cover rounded-xl shadow-md border-2 border-dashed border-gray-300 bg-gray-100 text-gray-400 text-sm flex items-center justify-center">
+        </div>
+    </section>
+
+    <!-- 05 — Why Regular Servicing Matters (Comparison) -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-2xl md:text-3xl text-gray-900 tracking-tight mb-4">
+                    <span class="font-normal text-gray-700">The cost of skipping servicing</span> <span class="font-extrabold">vs. servicing with us</span>
+                </h2>
+                <div class="w-12 h-1 bg-gray-300 mx-auto rounded-full"></div>
             </div>
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            
+            <div class="grid md:grid-cols-2 shadow-lg rounded-xl overflow-hidden border border-gray-200">
+                <!-- Bad Side -->
+                <div class="bg-red-50 p-8">
+                    <h3 class="text-xl font-heading font-bold text-red-900 mb-6 text-center">If You Don't Service Regularly</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Airflow safety:</strong> Inward airflow compromised, exposing staff to hazardous fumes</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Regulatory compliance:</strong> Risk of fines and penalties for non-compliance</div>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Power &amp; Electrical Limits</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Existing electrical capacity or sub-panels are insufficient for high-draw instrumentation.</p>
-            </div>
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+                
+                <!-- Good Side -->
+                <div class="bg-primary/5 p-8 border-t md:border-t-0 md:border-l border-gray-200">
+                    <h3 class="text-xl font-heading font-bold text-primary mb-6 text-center">With Our Servicing</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Airflow safety:</strong> Certified airflow testing</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Regulatory compliance:</strong> State certification for compliance</div>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Heat-Load &amp; ACMV Mismatches</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Laboratory has become noticeably warmer as equipment increased, causing temperature instability.</p>
-            </div>
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
-                </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Insufficient Ventilation / Exhaust</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Local exhaust ventilation (LEV), fume extraction, or fresh air exchanges fail to match current processes.</p>
-            </div>
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Utility Shortages</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Shortage of specialty gas drops, compressed air, vacuum, DI water supply, or chemical-resistant drainage.</p>
-            </div>
-            <div class="bg-white p-7 rounded-xl shadow-sm border border-gray-200 hover:border-brand-magenta/40 transition duration-200">
-                <div class="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center text-brand-magenta mb-5">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Changed Workflow &amp; Ageing Furniture</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Workflows have evolved since initial build-out; workbenches are no longer fit for purpose or compliant.</p>
             </div>
         </div>
     </section>
 
-    <!-- Comprehensive Scope Section with Blurred Background Image & Soft White Overlay -->
-    <section class="relative py-24 bg-gray-100 text-gray-900 overflow-hidden border-t border-gray-200">
-        <!-- Background Image with subtle blur to conceal low resolution -->
-        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M205DSEYECVTRZWMVGFCD0G1.png" 
-             alt="Comprehensive Laboratory Engineering Scope" 
-             class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none blur-[2px] scale-105"
-             onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/f3f4f6/9ca3af?text=Scope+Background+Image+Placeholder';">
+    <!-- 07 — Pricing & Offer -->
+    <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-200" id="pricing">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-2xl md:text-3xl text-gray-900 tracking-tight mb-4">
+                    <span class="font-normal text-gray-700">Transparent</span> <span class="font-extrabold">servicing packages</span>
+                </h2>
+                <div class="w-12 h-1 bg-gray-300 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <!-- Package A (Recommended) -->
+                <div class="bg-primary rounded-2xl overflow-hidden shadow-xl transform md:-translate-y-4 relative">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider z-20">
+                        Recommended
+                    </div>
+                    <div class="h-48 bg-primaryDark relative z-10 border-b border-white/10">
+                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0YGVK85YZDT87J8Z591PMR2.jpg" alt="Technician performing quarterly maintenance" class="w-full h-full object-cover absolute inset-0 bg-gray-200/20 text-white/70 text-sm flex items-center justify-center italic">
+                    </div>
+                    <div class="p-8 relative z-10">
+                        <h3 class="font-heading font-bold text-2xl text-white mb-2">Annual Servicing Contract</h3>
+                        <!-- Pricing removed as requested -->
+                        <ul class="space-y-4 mb-8 mt-6">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="ml-3 text-white/90">Annual re-certification by qualified technician</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="ml-3 text-white/90">Best for facilities that need ongoing compliance without tracking renewal dates themselves.</span>
+                            </li>
+                        </ul>
+                        <!-- Added CTA Button for Package A -->
+                        <a href="#quote" class="block w-full bg-white hover:bg-gray-100 text-primary font-heading font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-center text-lg">
+                            Request Quote
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Package B -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 relative">
+                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0YGV7EA7ANE13SNVTDEGDBH.jpg" alt="Technician conducting a one-time inspection" class="w-full h-full object-cover absolute inset-0 bg-gray-100 text-gray-400 text-sm flex items-center justify-center italic border-b border-gray-100">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-heading font-bold text-2xl text-primary mb-2">One-Time Servicing</h3>
+                        <!-- Pricing removed as requested -->
+                        <ul class="space-y-4 mb-8 mt-6">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="ml-3 body-text text-sm">Filter cleaning or replacement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="ml-3 body-text text-sm">Performance testing & airflow verification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="ml-3 body-text text-sm">Best for a single unit, a first-time inspection, or a one-off compliance check.</span>
+                            </li>
+                        </ul>
+                        <!-- Added CTA Button for Package B -->
+                        <a href="#quote" class="block w-full bg-primary hover:bg-primaryDark text-white font-heading font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-center text-lg">
+                            Request Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center mt-12 text-gray-600 italic max-w-2xl mx-auto">
+                Note: Final price depends on fume hood size, type, and condition — confirmed after a quick assessment.
+            </p>
+        </div>
+    </section>
 
-        <!-- Gentle white shade overlay to smooth out image artifacts while retaining visual depth -->
-        <div class="absolute inset-0 bg-white/70 backdrop-blur-[1px]"></div>
+    <!-- 08 — Is This Right for You? (Redesigned) -->
+    <section class="relative pt-24 pb-32">
+        <!-- Two-tone Background -->
+        <div class="absolute inset-0 z-0 flex flex-col">
+            <!-- Top Dark Area (#96145E) -->
+            <div class="h-3/5 bg-primary rounded-tl-[3rem] sm:rounded-tl-[5rem]"></div>
+            <!-- Bottom Light Area (#f5e8f0) -->
+            <div class="h-2/5 bg-[#f5e8f0]"></div>
+        </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Completely Floating Header (no container box) -->
-            <div class="text-center mb-16 max-w-3xl mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
-                    Comprehensive Scope Under <span class="font-extrabold text-brand-heading">One Integrated Team</span>
-                </h2>
-                <div class="w-12 h-1 bg-gray-400 rounded-full mx-auto mt-3 mb-4"></div>
-                <p class="text-gray-700 font-medium text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-                    No multi-vendor coordination burden on your team. AZIL delivers end-to-end engineering from diagnosis to commissioning.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <!-- 1. Space Planning & Workflow -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F88Z3FMXK32Q8ZF2YY7BFV.jpeg" 
-                             alt="Laboratory Space Planning & Workflow" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+01+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Planning &amp; Workflow
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                Laboratory Space Planning &amp; Workflow
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Reconfiguration &amp; workflow planning</li>
-                                <li>Equipment positioning &amp; clearance</li>
-                                <li>Zoning, expansion &amp; bench optimisation</li>
-                                <li>Storage &amp; sample flow planning</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 2. Architectural & Interior Works -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F8917NN225K2NH3E13XD53.jpeg" 
-                             alt="Architectural & Interior Works" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+02+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Architectural &amp; Interior
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                Architectural &amp; Interior Works
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Hygienic lab partition systems</li>
-                                <li>Epoxy / chemical-resistant seamless flooring</li>
-                                <li>Cleanroom &amp; lab ceiling grids</li>
-                                <li>Interlocking doors &amp; viewing glazing</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 3. Furniture & Workstations -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F890XARJ2NB4FHESW7GCC1.jpeg" 
-                             alt="Furniture & Workstations" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+03+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Lab Furniture &amp; Casework
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                Furniture &amp; Workstations
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Chemical-resistant worktops &amp; sinks</li>
-                                <li>Heavy instrument vibration-damped benches</li>
-                                <li>Reconfigurable benching systems</li>
-                                <li>Fume cupboards &amp; biosafety cabinets</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 4. Mechanical & Electrical (M&E) Services -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F8906M5JGEFCGK7913SMR0.jpeg" 
-                             alt="Mechanical & Electrical Services" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+04+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                M&amp;E Infrastructure
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                Mechanical &amp; Electrical (M&amp;E) Services
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Electrical power capacity &amp; sub-panel distribution</li>
-                                <li>UPS, emergency power &amp; ELV monitoring</li>
-                                <li>Lab specialty gases &amp; compressed air reticulation</li>
-                                <li>Plumbing, chemical drainage &amp; emergency showers</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 5. ACMV & Climate Control -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F88ZR0XCSTTRSBVDM2B1MB.jpeg" 
-                             alt="ACMV & Climate Control" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+05+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Climate &amp; Ventilation
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                ACMV &amp; Climate Control
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Cooling &amp; sensible heat-load calculation</li>
-                                <li>Fresh-air exchanges &amp; filtration systems</li>
-                                <li>Cleanroom &amp; lab differential pressure regimes</li>
-                                <li>Temperature stability &amp; humidity control</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 6. LEV & Environmental Compliance -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2FA1DJRP6BWSCN8N77SJW1Y.jpg" 
-                             alt="LEV & Environmental Compliance" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+06+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Statutory &amp; Exhaust
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                LEV &amp; Environmental Compliance
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Fume extraction &amp; wet / dry scrubber integration</li>
-                                <li>DOE written notification &amp; emission compliance</li>
-                                <li>DOSH statutory approval &amp; LEV certification</li>
-                                <li>Chemical-resistant PP / FRP ductwork engineering</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 7. Project Management & Construction -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl hover:border-brand-magenta/40 transition duration-200 flex flex-col md:col-span-2 lg:col-span-1 lg:col-start-2">
-                    <div class="h-48 w-full overflow-hidden bg-gray-100 relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F88ZEE9PQD4EKW1WN00WZ3.jpeg" 
-                             alt="Project Management & Construction" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Scope+07+Photo';">
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1.5">
-                                Turnkey Execution
-                            </p>
-                            <h3 class="font-bold text-gray-900 text-lg mb-4 leading-snug">
-                                Project Management &amp; Construction
-                            </h3>
-                        </div>
-                        <details class="group/details pt-3 border-t border-gray-100">
-                            <summary class="flex items-center justify-between cursor-pointer select-none">
-                                <span class="text-xs font-bold text-gray-900 group-hover/details:text-brand-magenta transition tracking-wider uppercase">More Details</span>
-                                <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open/details:rotate-180">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                                </div>
-                            </summary>
-                            <ul class="pt-3 text-xs text-gray-600 space-y-1.5 list-disc list-inside border-t border-gray-100 mt-2.5">
-                                <li>Site assessment &amp; diagnostic audit</li>
-                                <li>Multi-trade engineering coordination</li>
-                                <li>Phased renovation during live operations</li>
-                                <li>Testing, commissioning (T&amp;C) &amp; handover</li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Retain / Modify / Replace Framework Section -->
-    <section class="py-20 bg-white border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 max-w-3xl mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
-                    Our Engineering <span class="font-extrabold text-brand-heading">Framework</span>
-                </h2>
-                <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-4"></div>
-                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                    Not every lab needs an expensive full rebuild. We systematically evaluate your space into three clear categories to preserve capital and prevent unnecessary disruption:
-                </p>
-            </div>
-
-            <!-- Framework Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="border-2 border-emerald-200 bg-emerald-50/50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-emerald-700 font-extrabold text-xs uppercase tracking-widest mb-2">Category 01</div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-3">RETAIN</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Identify what still works. Solid worktops, sound utility runs, and compliant partitions are preserved, saving you capital and minimizing downtime.
-                    </p>
-                </div>
-                <div class="border-2 border-brand-blue/30 bg-blue-50/50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-brand-blue font-extrabold text-xs uppercase tracking-widest mb-2">Category 02</div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-3">MODIFY</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Re-engineer targeted elements: re-balance ACMV airflows, branch electrical sub-circuits, reposition furniture, and optimize bench workflows.
-                    </p>
-                </div>
-                <div class="border-2 border-brand-magenta/30 bg-pink-50/40 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-brand-magenta font-extrabold text-xs uppercase tracking-widest mb-2">Category 03</div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-3">REPLACE</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Replace obsolete infrastructure that poses safety risks or restricts critical operations: worn fume extraction, non-compliant M&amp;E, or failing surfaces.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Comparison Section -->
-    <section class="py-20 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-brand-heading tracking-tight mb-2">
-                Not Just Another <span class="font-extrabold text-brand-heading">Renovation Contractor</span>
-            </h2>
-            <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-6"></div>
             
-            <p class="text-sm sm:text-base lg:text-base text-gray-700 max-w-none lg:max-w-6xl xl:max-w-7xl mx-auto mb-8 leading-relaxed">
-                A lab isn’t an office fit-out. Standard contractors often tear out infrastructure you could have kept—or miss the power, airflow, and heat thresholds your instruments actually need. As lab engineers, we coordinate every detail in phases so your daily testing never has to stop.
+            <!-- Header Text -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 border border-white/30">
+                    Target Audience
+                </span>
+                <h2 class="font-heading font-extrabold text-white text-3xl md:text-4xl lg:text-5xl tracking-tight mb-4">
+                    Is our fume hood servicing right for you?
+                </h2>
+                <p class="text-white/90 text-lg">
+                    Our servicing is built for labs, research facilities, and industrial sites that need certified, compliant maintenance. <strong>It's likely not the right fit if you:</strong>
+                </p>
+            </div>
+
+            <!-- Overlapping Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl flex flex-col items-start border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Icon: Siren / Emergency -->
+                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center text-red-500 mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-primary mb-3">Same-Day Emergency</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Need same-day emergency repair rather than scheduled servicing and state certification.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl flex flex-col items-start border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Icon: Cog/Proprietary -->
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-accent mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-primary mb-3">Proprietary Equipment</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Use highly specialised or proprietary fume hood equipment requiring manufacturer-only service.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl flex flex-col items-start border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Icon: Eye/DIY -->
+                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-primary mb-3">Visual DIY Checks</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Are looking for a one-off DIY visual inspection rather than certified, compliant servicing.
+                    </p>
+                </div>
+
+            </div>
+            
+            <p class="text-center mt-12 text-gray-700 italic max-w-2xl mx-auto font-medium">
+                If any of the above sounds like you, we're happy to point you in the right direction — but for certified, compliant fume hood servicing, we're built exactly for that.
+            </p>
+        </div>
+    </section>
+
+    <!-- 09 — FAQ (Soalan Lazim) -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-2xl md:text-3xl text-gray-900 tracking-tight mb-4">
+                    <span class="font-normal text-gray-700">Frequently</span> <span class="font-extrabold">asked questions</span>
+                </h2>
+                <div class="w-12 h-1 bg-gray-300 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: How often does my fume hood need to be serviced?</h4>
+                    <p class="body-text text-base">Annual state certification by a qualified technician is required.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: Do I get proof of certification?</h4>
+                    <p class="body-text text-base">Yes — you will receive state certification for your fume hood.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: How do I book a servicing appointment?</h4>
+                    <p class="body-text text-base">Fill in the enquiry form on this page or contact us directly — we'll confirm scope and provide a quote before scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10 — CTA (ke Form / Enquiry) -->
+    <section id="quote" class="bg-primary py-24 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-white mb-6 tracking-tight">Ready to get your fume hood certified?</h2>
+            <p class="text-xl text-white/90 mb-10">
+                Tell us a bit about your equipment and we'll get back to you with a quote and available servicing dates.
             </p>
             
-            <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-3.5 bg-brand-magenta text-white font-bold rounded-lg shadow-lg hover:bg-brand-magentaHover transition duration-200">
-                Request a Laboratory Assessment
-            </a>
-        </div>
-    </section>
-
-    <!-- 5. Case Studies -->
-    <section class="py-20 bg-[#96145E] text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="bg-white/15 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white">
-                    Field Engineering
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-medium tracking-tight mt-3 mb-2 text-white">
-                    Engineering <span class="font-extrabold text-white">Proven Results</span>
-                </h2>
-                <div class="w-12 h-1 bg-white/40 rounded-full mx-auto mt-3 mb-4"></div>
-                <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
-                    Real infrastructure solutions for active, operating laboratory facilities.
-                </p>
+            <div class="bg-white p-8 rounded-xl shadow-2xl max-w-xl mx-auto mb-10 text-left min-h-[300px]">
+                <!-- HubSpot Form Embed -->
+                <script src="https://js-na2.hsforms.net/forms/embed/5798074.js" defer></script>
+                <div class="hs-form-frame" data-region="na2" data-form-id="dd5c1399-5c0b-4dc3-8406-0ee97eb70028" data-portal-id="5798074"></div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Case Study 01 -->
-                <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
-                    <div class="aspect-[16/9] w-full bg-gray-100 flex flex-col items-center justify-center overflow-hidden border-b border-gray-100 text-center relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2FE0HMD0V20DEXDN9HK2AFY.jpeg" 
-                             alt="Case Study 01 Project Photography" 
-                             class="w-full h-full object-cover"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Project+01+Photo+Placeholder';">
-                        <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/60 text-white font-mono backdrop-blur">Rawang, Selangor</span>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-extrabold text-xl mb-4 border-b border-gray-100 pb-2 text-gray-900">
-                                Pharmaceutical Manufacturing
-                            </h3>
-                            <div class="space-y-3 text-xs sm:text-sm">
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Challenge:</span>
-                                    <p class="text-gray-600 mt-0.5">Limited laboratory space was restricting new equipment installation and creating an overcrowded working environment.</p>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">What AZIL Identified:</span>
-                                    <p class="text-gray-600 mt-0.5">Inefficient space utilisation and workflow layout were limiting current operations and hindering future expansion capabilities.</p>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Solution:</span>
-                                    <p class="text-gray-600 mt-0.5">Relocated the Microbiology Lab to the mezzanine floor and strategically expanded the General Lab within the existing footprint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-gray-100">
-                            <span class="font-bold text-emerald-600 uppercase tracking-wider text-[11px] block">The Result:</span>
-                            <p class="text-gray-700 text-xs sm:text-sm mt-0.5 font-medium">Gained capacity for new and future equipment, with a streamlined workflow that significantly improves productivity and laboratory efficiency.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Case Study 02 -->
-                <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
-                    <div class="aspect-[16/9] w-full bg-gray-100 flex flex-col items-center justify-center overflow-hidden border-b border-gray-100 text-center relative">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2FE9FTB5386YV0KYJJNNVMH.jpg" 
-                             alt="Case Study 02 Project Photography" 
-                             class="w-full h-full object-cover"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/F3F4F6/9CA3AF?text=Project+02+Photo+Placeholder';">
-                        <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/60 text-white font-mono backdrop-blur">Shah Alam, Selangor</span>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-extrabold text-xl mb-4 border-b border-gray-100 pb-2 text-gray-900">
-                                Painting &amp; Coating Manufacturing
-                            </h3>
-                            <div class="space-y-3 text-xs sm:text-sm">
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Challenge:</span>
-                                    <p class="text-gray-600 mt-0.5">Existing space was restricting colour and material R&amp;D activities, making it difficult to carry out testing efficiently as requirements grew.</p>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">What AZIL Identified:</span>
-                                    <p class="text-gray-600 mt-0.5">Limited space created an inefficient workflow, while the existing ventilation system failed to manage strong chemical odours effectively.</p>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-brand-magenta uppercase tracking-wider text-[11px] block">The Solution:</span>
-                                    <p class="text-gray-600 mt-0.5">Reorganised the layout into dedicated zones (Wet Lab, Dry Lab, Storage, Office) and redesigned the exhaust and ACMV systems to suit actual processes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-gray-100">
-                            <span class="font-bold text-emerald-600 uppercase tracking-wider text-[11px] block">The Result:</span>
-                            <p class="text-gray-700 text-xs sm:text-sm mt-0.5 font-medium">Delivered a safer, odour-free environment with highly organised workflows, allowing a higher volume of R&amp;D testing to be carried out efficiently.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-magenta font-extrabold rounded-lg shadow-lg hover:bg-gray-100 transition duration-200">
-                    Request a Laboratory Assessment
+            <div class="text-white">
+                <a href="https://azilgroup.com/" target="_blank" class="inline-flex items-center justify-center gap-2 text-white hover:text-gray-200 transition-colors font-medium border-b border-dashed border-white/50 pb-1">
+                    Visit Our Official Homepage
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 7. Assessment Request & Form -->
-    <section class="py-20 bg-gray-50 border-t border-gray-200" id="assessment-form">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-                
-                <div class="lg:col-span-6 flex flex-col space-y-6">
-                    <div>
-                        <span class="text-brand-magenta font-bold tracking-wider uppercase text-xs sm:text-sm">Direct Assessment Request</span>
-                        <h2 class="text-3xl sm:text-4xl font-medium text-brand-heading tracking-tight mt-1 mb-2">
-                            Request a <span class="font-extrabold text-brand-heading">Laboratory Assessment</span>
-                        </h2>
-                        <div class="w-12 h-1 bg-gray-300 rounded-full mt-3 mb-4"></div>
-                        <p class="text-base text-gray-700 leading-relaxed">
-                            Take the uncertainty out of your laboratory expansion or renovation. Our engineering team reviews your current space, equipment integration plans, and M&amp;E infrastructure before any capital commitment is made.
-                        </p>
-                    </div>
-
-                    <!-- Lead Magnet Link -->
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-gray-900 text-base mb-1">
-                                    Not quite ready for an on-site assessment?
-                                </h3>
-                                <p class="text-xs sm:text-sm text-gray-600 mb-3 leading-relaxed">
-                                    Download our complimentary diagnostic document: <em>"AZIL Existing Laboratory Upgrade Checklist: 15 Things to Review Before Renovating or Expanding."</em>
-                                </p>
-                                <a href="[insert link here]" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-blue hover:text-blue-700 transition">
-                                    <span>Download the Free Checklist</span>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Information Card -->
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-brand-magenta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            Direct Contact Information
-                        </h4>
-                        
-                        <div class="space-y-4">
-                            <!-- Email -->
-                            <div class="flex items-start gap-3">
-                                <div class="w-8 h-8 rounded-lg bg-pink-50 text-brand-magenta flex items-center justify-center shrink-0 mt-0.5">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block">Email AZIL Engineering Team</span>
-                                    <a href="mailto:azil@azil-engineers.com" class="text-sm sm:text-base font-bold text-brand-magenta hover:underline hover:text-brand-magentaHover transition">
-                                        azil@azil-engineers.com
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Phone Numbers -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-gray-100">
-                                <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-gray-100 text-gray-700 flex items-center justify-center shrink-0 mt-0.5">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block">Singapore Office</span>
-                                        <a href="tel:+6563686441" class="text-sm font-bold text-gray-900 hover:text-brand-magenta transition">
-                                            +65 6368 6441
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-gray-100 text-gray-700 flex items-center justify-center shrink-0 mt-0.5">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block">Malaysia Office</span>
-                                        <a href="tel:+60126914644" class="text-sm font-bold text-gray-900 hover:text-brand-magenta transition">
-                                            +60 12-691 4644
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Dynamic Image Card: Automatically stretches to align with the form's bottom border -->
-                    <div class="flex-grow flex-1 min-h-[320px] rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-white relative group">
-                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/09/01M2F0JTWZYF8455VQ4XMWTTC8.png" 
-                             alt="Laboratory On-Site Assessment & Engineering Team" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                             onerror="this.onerror=null; this.src='https://placehold.co/800x1200/F3F4F6/9CA3AF?text=Engineering+Site+Assessment';">
-                    </div>
-                </div>
-
-                <!-- Right Column: Assessment HubSpot Form -->
-                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-xl border-t-4 border-brand-magenta">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-extrabold text-gray-900">Laboratory Assessment Enquiry</h3>
-                        <p class="text-xs text-gray-500 mt-1">Directly received by AZIL Project &amp; Engineering team</p>
-                    </div>
-
-                    <div id="hubspot-form-container" class="min-h-[420px]"></div>
-
-                    <script charset="utf-8" type="text/javascript" src="https://js-na2.hsforms.net/forms/embed/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                        region: "na2",
-                        portalId: "5798074",
-                        formId: "ffbe2b0f-3d14-4b04-affa-dc583728265d",
-                        target: "#hubspot-form-container",
-                        onFormReady: function($form) {
-                            window.hubspotFormReady = true;
-                            window.hubspotForm = $form;
-
-                            try {
-                                const urlParams = new URLSearchParams(window.location.search);
-                                const salesRep = urlParams.get('sales_rep_attribution');
-                                if (salesRep) {
-                                    const hiddenRepInput = $form.find('input[name="sales_rep_attribution"]');
-                                    if (hiddenRepInput.length > 0) {
-                                        hiddenRepInput.val(salesRep).change();
-                                    }
-                                }
-                            } catch(err) {
-                                console.error("Error setting sales attribution parameter:", err);
-                            }
-                        }
-                      });
-                    </script>
-
-                    <p class="text-xs text-center text-gray-400 mt-4 leading-relaxed">
-                        Have architectural drawings, equipment schedules or site photos? You can securely share technical documents after submitting your request.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Frequently Asked Questions -->
-    <section class="py-20 bg-[#FAFAFA] border-t border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 10.5 — Other Services -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Section Header mimicking the reference image -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-heading tracking-tight">
-                    Frequently <span class="font-black text-brand-heading">asked questions</span>
+                <h2 class="font-heading text-2xl md:text-3xl text-gray-900 tracking-tight mb-4">
+                    <span class="font-normal text-gray-700">Services</span> <span class="font-extrabold">We Provide</span>
                 </h2>
-                <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-3 mb-8"></div>
+                <!-- Small dividing line below title -->
+                <div class="w-12 h-1 bg-gray-300 mx-auto rounded-full"></div>
             </div>
             
-            <div class="space-y-3">
-                <!-- FAQ 1 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: Can we renovate our laboratory without completely rebuilding it?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        Yes. Using our Retain / Modify / Replace framework, we systematically categorize what infrastructure remains technically sound and code-compliant. Many labs achieve their expansion and equipment integration goals with targeted M&amp;E or ACMV re-balancing, avoiding full strip-out demolition costs.
+            <!-- 3-Column Services Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col group">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden">
+                        <img src="https://azilgroup.com/wp-content/uploads/2024/02/20170524_121728.png" alt="Laboratory Design & Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 bg-gray-200 text-gray-400 text-sm flex items-center justify-center italic">
                     </div>
-                </details>
+                    <div class="p-8 flex-1 flex flex-col border-t border-gray-50">
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-3">Service & Installation</p>
+                        <h3 class="font-heading font-bold text-xl text-gray-900 mb-6 flex-1">Laboratory Design & Build</h3>
+                        <a href="https://azilgroup.com/laboratory-engineering-and-infrastructure/" id="cta-lab-design-build" class="text-xs font-bold text-gray-900 uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1 mt-auto">
+                            More Details
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <!-- FAQ 2 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: Can our laboratory continue operating during renovation?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        Yes. We specialize in live, operational facilities. We develop phased renovation schedules, negative-pressure dust containment partitions, off-hours/weekend tie-ins, and temporary utility bypasses so mission-critical testing schedules proceed uninterrupted.
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col group">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden">
+                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M13MFZZR98BK0MT9JFN9KVM6.jpg" alt="Laboratory Chemical & Other Licensing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 bg-gray-200 text-gray-400 text-sm flex items-center justify-center italic">
                     </div>
-                </details>
+                    <div class="p-8 flex-1 flex flex-col border-t border-gray-50">
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-3">Compliance & Safety</p>
+                        <h3 class="font-heading font-bold text-xl text-gray-900 mb-6 flex-1">Laboratory Chemical & Other Licensing</h3>
+                        <a href="https://azilgroup.com/laboratory-engineering-and-infrastructure/" id="cta-lab-licensing" class="text-xs font-bold text-gray-900 uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1 mt-auto">
+                            More Details
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <!-- FAQ 3 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: We're purchasing new laboratory equipment — when should we involve AZIL?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        Ideally before placing the purchase order or signing delivery contracts. We conduct a pre-arrival utility assessment to cross-check the manufacturer's cut-sheet against your site's electrical capacity, exhaust static pressure, cooling BTUs, gas purity, and floor vibration thresholds.
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col group">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden">
+                        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M13K4ZCCWKX6WHRVP0PCE360.jpeg" alt="Laboratory Furniture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 bg-gray-200 text-gray-400 text-sm flex items-center justify-center italic">
                     </div>
-                </details>
+                    <div class="p-8 flex-1 flex flex-col border-t border-gray-50">
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-3">Supply & Fitting</p>
+                        <h3 class="font-heading font-bold text-xl text-gray-900 mb-6 flex-1">Laboratory Furniture</h3>
+                        <a href="https://azilgroup.com/laboratory-engineering-and-infrastructure/" id="cta-lab-furniture" class="text-xs font-bold text-gray-900 uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1 mt-auto">
+                            More Details
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <!-- FAQ 4 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: Why has our laboratory become hotter after adding equipment?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        Modern analytical instruments (LC-MS, mass spectrometers, incubators, robotic handlers) generate massive sensible heat loads. If your ACMV system was sized for simple bench testing, the air volume exchange is overwhelmed. We calculate thermal outputs and re-engineer airflow paths and localized exhaust to restore thermal balance.
-                    </div>
-                </details>
-
-                <!-- FAQ 5 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: Can AZIL upgrade only our M&amp;E or ventilation without renovating the entire laboratory?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        Yes. We frequently execute targeted infrastructure packages—such as upgrading electrical sub-panels, adding dedicated clean power circuits, installing localized LEV fume arms, or replumbing drainage manifolds—without touching architectural furniture.
-                    </div>
-                </details>
-
-                <!-- FAQ 6 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: What types of facilities does AZIL support for renovation?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        We support active, operating research, testing, QC, and industrial laboratories. We maintain engineering teams and project managers delivering fit-out, renovation, M&amp;E, and commissioning for mission-critical facilities.
-                    </div>
-                </details>
-
-                <!-- FAQ 7 -->
-                <details class="group bg-white rounded-xl border border-gray-200/80 shadow-sm hover:border-gray-300 transition-all duration-200">
-                    <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none">
-                        <h3 class="text-brand-magenta font-semibold text-sm sm:text-base pr-4 leading-snug">
-                            Q: How do we know what actually needs upgrading?
-                        </h3>
-                        <div class="w-7 h-7 rounded-full bg-pink-50 flex items-center justify-center shrink-0 text-brand-magenta transition-transform duration-300 group-open:rotate-180">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </summary>
-                    <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-2 text-gray-600 text-xs sm:text-sm leading-relaxed border-t border-gray-100">
-                        That is precisely the purpose of our initial Laboratory Assessment. We inspect your physical site, review your equipment lists and workflows, run capacity checks on M&amp;E and ACMV, and provide a clear Retain / Modify / Replace roadmap before you commit to construction budgets.
-                    </div>
-                </details>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="relative w-full text-white py-20 border-t border-gray-700 overflow-hidden bg-gray-900">
-        <!-- Background Image with image placeholder -->
-        <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0YF2P8MSQTQ5636PQHKZ7S9.png" 
-             alt="" 
-             class="absolute inset-0 w-full h-full object-cover opacity-50 select-none pointer-events-none"
-             onerror="this.onerror=null; this.src='https://placehold.co/1920x800/1f2937/4b5563?text=Footer+Background+Image+Placeholder';">
-        
-        <!-- Lightened neutral grey overlay with reduced opacity -->
-        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-900/55 to-gray-900/40"></div>
+    <!-- 11 — Footer / Contact Us Section -->
+    <footer class="relative py-24 bg-neutral-900 border-t border-neutral-800">
+        <!-- Background Image (Placeholder) -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="w-full h-full bg-cover bg-center opacity-40" style="background-image: url('https://platform-bcl.bsb-cdn.com/media/2026/08/01M0YF2P8MSQTQ5636PQHKZ7S9.png');"></div>
+            <!-- Dark gradient overlay to ensure text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/80 to-transparent"></div>
+        </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex items-center justify-center mb-6">
-                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M138WTKZYMF7P76TJ21RNEB4.png" 
-                     class="h-10 sm:h-12 w-auto object-contain mx-auto"
-                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'40\' fill=\'none\'></svg>';">
-            </div>
-            <h3 class="text-xl sm:text-2xl font-medium mb-2 drop-shadow-sm">
-                Ready to solve your <span class="font-extrabold text-white">laboratory infrastructure constraints?</span>
-            </h3>
-            <div class="w-12 h-1 bg-white/40 rounded-full mx-auto mt-2 mb-6"></div>
-            <p class="text-gray-200 text-sm max-w-xl mx-auto mb-8 drop-shadow-sm">
-                Speak directly with an engineering team that understands laboratories, compliance, and live operational continuity.
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            
+            <h3 class="uppercase tracking-widest text-sm md:text-base font-bold mb-4">Contact Us</h3>
+            <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">How can we <span class="text-white bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-300">help you?</span></h2>
+            
+            <!-- Tailored Subheadline -->
+            <p class="text-lg md:text-xl font-medium mb-10 max-w-2xl mx-auto leading-relaxed">
+                Our dedicated experts are here to address your <span class="font-bold">fume hood compliance challenges</span> and ensure safe, certified laboratory management.
             </p>
-            <a href="#assessment-form" class="inline-flex items-center justify-center px-8 py-4 bg-brand-magenta text-white font-extrabold rounded-lg shadow-xl hover:bg-brand-magentaHover transition duration-200 mb-10">
-                Request a Laboratory Assessment
+            
+            <!-- CTA Email Button -->
+            <a href="mailto:azil@azil-engineers.com" class="inline-flex items-center justify-center bg-[#FF8C00] hover:bg-[#E67E00] text-gray-900 font-extrabold py-4 px-10 text-lg uppercase tracking-wider transition-colors duration-200">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Contact Us
             </a>
-            <div class="pt-8 border-t border-gray-700/70 text-xs text-gray-300 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p>&copy; 2026 AZIL Group. All rights reserved.</p>
-                <div class="space-x-4">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
-                </div>
+            
+        </div>
+        
+        <!-- Bottom Copyright Bar -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 pt-8 border-t border-white/20 text-center flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p class="mb-4 md:mb-0">&copy; 2026 Azil Engineers PTE LTD. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="tel:+6563686441" class="hover:text-white transition-colors">+65 6368 6441</a>
+                <a href="https://azilgroup.com/" target="_blank" class="hover:text-white transition-colors">azilgroup.com</a>
             </div>
         </div>
     </footer>
